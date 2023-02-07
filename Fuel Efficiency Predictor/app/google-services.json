@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "229506478641",
+    "project_id": "fuel-efficiency-predictor",
+    "storage_bucket": "fuel-efficiency-predictor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229506478641:android:cb76284a6f3d850f58db10",
+        "android_client_info": {
+          "package_name": "com.example.fuelefficiencypredictor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "229506478641-otk6j842ist6785j1p6r5ctlt28sfd9r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDApaAn8WptVz05i6S_87o3t_eHhwjb8Jg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "229506478641-otk6j842ist6785j1p6r5ctlt28sfd9r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

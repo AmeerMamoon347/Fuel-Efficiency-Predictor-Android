@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E5DE"
+    tools:context=".Profile">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_Image"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/person_dark"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#BBBCB6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:civ_border_overlay="true"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+
+            <EditText
+                android:id="@+id/profile_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/profile_Image"
+                android:textColor="@color/black"
+                android:background="@drawable/layout_bg"
+                android:padding="15dp"
+                android:layout_margin="30dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/profile_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="#ACADA8"
+                app:layout_constraintTop_toBottomOf="@id/profile_Name"
+                android:text="Email"
+                android:background="@drawable/layout_bg"
+                android:layout_margin="30dp"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/profile_Country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/profile_Email"
+                android:hint="Country"
+                android:textColorHint="#BBBCB6"
+                android:textColor="@color/black"
+                android:background="@drawable/layout_bg"
+                android:padding="15dp"
+                android:layout_margin="30dp"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/profile_VehicleCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                app:layout_constraintTop_toBottomOf="@id/profile_Country"
+                android:hint="Number of vehicles own"
+                android:textColorHint="#BBBCB6"
+                android:textColor="@color/black"
+                android:background="@drawable/layout_bg"
+                android:padding="15dp"
+                android:layout_margin="30dp"
+                android:textSize="20dp"/>
+
+            <androidx.constraintlayout.utils.widget.MotionButton
+                android:id="@+id/profile_Save"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_dec"
+                android:layout_marginTop="20dp"
+                android:text="Save"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile_VehicleCount" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="349dp"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:visibility="invisible"
+                android:indeterminateTint="#BBBCB6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.466" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </FrameLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
